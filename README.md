@@ -10,38 +10,24 @@ SQLAlchemy (ORM)
 Alembic (Migrations)
 Uvicorn
 
-Project Structure
-│   .env
-│   alembic.ini
-│   README.md
-│   requirements.txt
-│   __init__.py
-│   
-├───alembic
-│   │   env.py
-│   │   README
-│   │   script.py.mako
-│   │   
-│   ├───versions
-│           
-└───app
-    │   database.py
-    │   main.py
-    │   
-    ├───models
-    │   │   movie.py
-    │   |  __init__.py
-    │           
-    ├───routes
-    │   │   movie.py
-    │   └───  __init__.py 
-    │   
-    │           
-    ├───schemas
-    │   │   movie.py
-    │   └─── __init__.py
-    │    
-    │   
+app/
+│── main.py
+│── database.py
+
+models/
+│── movie.py
+│── __init__.py
+
+routes/
+│── movie.py
+│── __init__.py
+
+alembic/
+│── versions/
+
+Schema/
+│── movies.py
+│── __init__.py
     
 Create database:
 
