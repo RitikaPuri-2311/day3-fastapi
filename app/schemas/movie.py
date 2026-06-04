@@ -5,7 +5,8 @@ class MovieCreate(BaseModel):
     title: str
     genre: str
     rating: float
-
+    watched: bool
+    
 
 class MovieResponse(BaseModel):
     id: int
